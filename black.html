@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li><a href="About.html" class="text-decoration-none">About</a></li>
+          <li><a href="viz.html" class="text-decoration-none">Viz</a></li>
+          <li><a href="svg.html" class="text-decoration-none">SVG</a></li>
+          <li><a href="sgd.html">White Hat</a></li>
+          <li><a href="black.html">Black Hat</a></li>
+          <li><a href="credits.html" class="text-decoration-none">Credits</a></li>
+        </ul>
+      </nav>
+    <br/>
+      <div> <h1 class="gun"><span id="black">Gun deaths increasing under Trump Administration</span></h1></div>
+                <body>
+                            
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+            text-align: center;
+            font-size: large;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        figcaption{
+            vertical-align: middle;
+            text-align: center;
+            position:static;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
+        #mislead {
+            color: red;
+        }
+    </style>
+</head>
+
+    <div id="main">
+        <div id="">
+            <div id="black_hat">
+                <div id="black-vis">
+                    <div>
+                        <div id ="mislead">
+                            <!-- <h2 style="text-align:center">Gun deaths data comparision between Obama and Trump Administration</h2> -->
+                        </div>
+                        <div class="container">
+                            <div class="mySlides">
+                                <img src="./img/obama.png" alt="abcs" style="width:100%">
+                                <figcaption>Obama Administration</figcaption>
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="./img/trump.png" alt="abcs" style="width:100%">
+                                <figcaption>Trump Administration</figcaption>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+                            <a class="next" onclick="plusSlides(1)">&#62;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = slides[slideIndex - 1].alt;
+        }
+    </script>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    <p class="container">Gun deaths are up over 12 percent year-over-year. Firearm injuries are up nearly 8 percent. The number of children under the age of 12 shot by a gun has increased by 16 percent, while instances of defensive gun use are up nearly 30 percent.</p>
+
+</body>
+               
+  </body>
+</html>
+
+   

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li><a href="About.html" class="text-decoration-none">About</a></li>
+          <li><a href="viz.html" class="text-decoration-none">Viz</a></li>
+          <li><a href="svg.html" class="text-decoration-none">SVG</a></li>
+          <li><a href="sgd.html">White Hat</a></li>
+          <li><a href="black.html">Black Hat</a></li>
+          <li><a href="credits.html" class="text-decoration-none">Credits</a></li>
+        </ul>
+      </nav>
+      <div class="container full-height">
+        <section id="viz">
+          <div class="row center-items margin-top">
+            <div class="col-12 full-width center-container">
+              <h1 class="gun"><span>Gun Deaths in USA from Dec 2012-13</span></h1>
+              <img src="./img/legend.png" class="legend" />
+              <div id="tooltip-container"></div>
+              <div class="viz full-width center-container"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 label-div">
+              <h1 class="font_0">
+                Gun Victims: <span class="location-text">USA</span>
+              </h1>
+              <a href="#" >Know more about the visualization....</a>
+              <p class="font_4">(Dec 2012 - Dec 2013)</p>
+              <h3 class="font_5">
+                Total Deaths: <span class="death-count">12070</span>
+              </h3>
+              <h5 class="font_4">
+                <span class="red">Female</span> Deaths:
+                <span id="female-total">1850</span> (
+                <span id="female-child">77</span> Children,
+                <span id="female-teen">69</span> Adoloscents,
+                <span id="female-adult">1676</span> Adults )
+              </h5>
+              <h5 class="font_4">
+                <span class="blue">Male</span> Deaths:
+                <span id="male-total">10153</span> (
+                <span id="male-child">155</span> Children,
+                <span id="male-teen">503</span> Adoloscents,
+                <span id="male-adult">9310</span> Adults )
+              </h5>
+            </div>
+          </div>
+          <div class="row center-items full-height">
+            <div class="col-12 full-width center-container full-height">
+              <div id="gridtip-container"></div>
+              <div class="grid full-width center-container full-height"></div>
+            </div>
+          </div>
+        </section>
+        <section id="methodology">
+          <div class="row center-items full-height margin-top">
+            <div
+              class="col-12 full-width center-container full-height margin-left"
+            >
+              <h3 class="font_0">Methodology:</h3>
+              <p class="font_5">
+                Steps to navigate through this visualization
+              </p>
+              <ol class="font_5 margin-left">
+                <li>
+                  The first visual will be a chloropleth showing the deaths per state. Darker color implies more deaths.
+                </li>
+                <li>
+                  Click on any state to zoom in into that state and get more detailed visualization of that state.
+                </li>
+                <li>Above this section you can see the details about victims.</li>
+                <li>You can hover over any element to get even more details.</li>
+                <li>
+                  The bubbles on the map are colored <span class="blue">blue</span> and <span class="red">red</span> to show male
+                  and female deaths(respectively) normalized by the population
+                  in that city/town/county.
+                </li>
+                <li>
+                  On the grid, the <span class="red">reds</span> show female deaths and the <span class="blue">blues</span> show
+                  male deaths. The greys depicts unknown gender. The darkness of
+                  the colors are based on the age groups(Child/Adoloscent/Adult)
+                  of the victim. Darker colors correspond to higher age group.
+                </li>
+                <li>Double click on state to zoom out.</li>
+                
+                
+                
+              </ol>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"
+      ></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+      ></script>
+      <script type="text/javascript" src="sgd.js"></script>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  /* width: 100%;
+  height: 100%; */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-width {
+  width: 100%;
+}
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.center-container {
+  /* margin-top: 10px; */
+  margin: 10px auto;
+  align-self: center;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+}
+
+.darkblue {
+  color: rgb(8, 8, 37);
+}
+
+.pink {
+  color: rgb(255, 148, 166);
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: rgb(8, 107, 207);
+}
+
+.grey {
+  color: gray;
+}
+
+.footer {
+  height: 100px;
+}
+
+#female-child {
+  color: #fac1c0;
+}
+
+#female-teen {
+  color: #f69394;
+}
+
+#female-adult {
+  color: #f25e60;
+}
+
+#male-child {
+  color: #8ebada;
+}
+
+#male-teen {
+  color: #3d8bba;
+}
+
+#male-adult {
+  color: #005394;
+}
+
+.font_0 {
+  font: Normal Normal Normal 50px/1.4em Poppins, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.font_5 {
+  font: 25px Poppins, sans-serif;
+  font-weight: normal;
+  /* line-height: 1.8em; */
+}
+
+.font_4 {
+  font: 20px Poppins, sans-serif;
+}
+
+.label-div {
+  margin-left: 10px;
+}
+
+.blur {
+  fill: #fcfcfc;
+}
+.us-state {
+  stroke: white;
+  stroke-width: 0.5px;
+  transition: transform 0.2s;
+  fill-opacity: 0.8;
+}
+
+.us-state:hover {
+  stroke: black;
+  fill-opacity: 1;
+}
+
+.active {
+  stroke-width: 0.4;
+  fill: #808080;
+  fill-opacity: 1;
+  stroke: transparent;
+}
+
+.active:hover {
+  stroke: transparent;
+}
+*/ rect {
+  fill: transparent;
+}
+
+.bubble {
+  stroke-width: 1.5px;
+}
+
+circle:hover {
+  stroke: red;
+  stroke-width: 0.4px;
+  cursor: pointer;
+}
+
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+  z-index: 100;
+}
+
+#gridtip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  z-index: 100;
+  display: none;
+}
+
+.tooltip_key {
+  font-weight: bold;
+}
+
+.tooltip_value {
+  margin-left: 20px;
+  float: right;
+}
+
+.grid {
+  overflow: visible;
+}
+
+.grid-g {
+  overflow: visible;
+}
+
+span.subtext {
+  font-size: 15px;
+}
+
+@media (max-width: 967px) {
+  .close-center {
+    width: 90%;
+  }
+  .font_0 {
+    font: Normal Normal Normal 35px Poppins, sans-serif;
+    font-weight: bold;
+    /* line-height: 1.5em; */
+  }
+  .font_5 {
+    font: Normal Normal Normal 20px Poppins, sans-serif;
+    font-weight: normal;
+    /* line-height: 1.8em; */
+    letter-spacing: 0em;
+  }
+  .font_4 {
+    font-family: Poppins, sans-serif;
+  }
+}
